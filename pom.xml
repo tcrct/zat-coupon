@@ -35,5 +35,10 @@
             <artifactId>springboot-side</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.springboot.side.duang.exception</groupId>
+            <artifactId>duang-exception</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
