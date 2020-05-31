@@ -40,9 +40,9 @@ public class DemoController {
     @RequestMapping(value = "/save1", method= RequestMethod.POST, produces = "application/json")
     @ResponseBody
     public String save1(@Validated @RequestBody User user) {
-        System.out.println("####################");
-        user.setName(null);
-        java.util.Objects.requireNonNull(user.getName());
+        System.out.println("##########################@@@@@@@save");
+//        user.setName(null);
+//        java.util.Objects.requireNonNull(user.getName());
         User user1 =  demoService.save(user);
         return user1.getName();
     }

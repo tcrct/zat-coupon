@@ -1,5 +1,6 @@
 package com.zat.coupon.service;
 
+import com.springbootside.duang.exception.nums.BaseExceptionEnum;
 import com.zat.coupon.entity.User;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,8 @@ public class DemoService {
 
     public User save(User user) {
         user.setName(null);
-        java.util.Objects.requireNonNull(user.getName());
+//        java.util.Objects.requireNonNull(user.getName());
+        BaseExceptionEnum.PARAM_NULL.assertNotNull(user.getName());
         return user;
     }
 

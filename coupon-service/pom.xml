@@ -47,6 +47,11 @@
             <artifactId>coupon-dto</artifactId>
             <version>${coupon.dto.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.springbootside.duang.exception</groupId>
+            <artifactId>duang-exception</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 </project>
