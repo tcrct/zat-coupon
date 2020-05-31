@@ -1,10 +1,11 @@
 package com.zat.coupon.web;
 
+import com.springbootside.duang.exception.dto.ExceptionResultDto;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication(scanBasePackages = {"com.zat.coupon.*","com.springboot.side.duang.exception"})
+@SpringBootApplication(scanBasePackages = {"com.zat.coupon","com.springbootside.duang"})
 //@ComponentScan(basePackages = {"com.zat.coupon.*","com.springbootside.duang.*"})
 public class Application {
 
