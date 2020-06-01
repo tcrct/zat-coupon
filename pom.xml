@@ -14,6 +14,7 @@
         <module>coupon-entity</module>
         <module>coupon-dto</module>
         <module>coupon-web</module>
+        <module>coupon-handler</module>
     </modules>
 
     <parent>

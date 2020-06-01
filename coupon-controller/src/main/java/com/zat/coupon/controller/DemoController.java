@@ -3,11 +3,14 @@ package com.zat.coupon.controller;
 import com.zat.coupon.entity.User;
 import com.zat.coupon.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.util.Assert;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by laotang on 2020/5/17.
@@ -21,8 +24,9 @@ public class DemoController {
     private DemoService demoService;
 
     @RequestMapping("/index")
-    public String index() {
-        return demoService.index("Hello Laotang!");
+    public String index(HttpServletRequest request) {
+        String name = request.getParameter("name");
+        return demoService.index("Hello "+name+"!");
     }
 
     @RequestMapping(value = "/save", method= RequestMethod.POST, produces = "application/json")
