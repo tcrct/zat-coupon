@@ -15,6 +15,7 @@
         <module>coupon-dto</module>
         <module>coupon-web</module>
         <module>coupon-handler</module>
+        <module>coupon-dao</module>
     </modules>
 
     <parent>
