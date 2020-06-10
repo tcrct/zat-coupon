@@ -12,6 +12,13 @@
     <groupId>com.zat.coupon.entity</groupId>
     <artifactId>coupon-entity</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.springbootside.duang.common</groupId>
+            <artifactId>duang-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
     <packaging>jar</packaging>
 
     <properties>

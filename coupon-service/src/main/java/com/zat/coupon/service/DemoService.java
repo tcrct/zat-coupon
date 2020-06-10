@@ -1,12 +1,9 @@
 package com.zat.coupon.service;
 
-import com.springbootside.duang.common.dao.SqlDao;
+import com.springbootside.duang.common.ToolsKit;
+import com.springbootside.duang.db.dao.Dao;
 import com.springbootside.duang.exception.nums.BaseExceptionEnum;
-import com.zat.coupon.dao.UserDao;
 import com.zat.coupon.entity.User;
-import org.beetl.sql.core.ConnectionSource;
-import org.beetl.sql.core.ConnectionSourceHelper;
-import org.beetl.sql.core.db.DBStyle;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,13 +20,16 @@ public class DemoService {
 //    @Autowired
 //    private UserDao userDao;
     @Autowired
-    private SqlDao<User> userDao;
+    private Dao<User> userDao;
 
     public User save(User user) {
 //        user.setName(null);
 //        java.util.Objects.requireNonNull(user.getName());
         BaseExceptionEnum.PARAM_NULL.assertNotNull(user.getName());
         userDao.save(user);
+        User user1 = userDao.findById("13");
+        System.out.println(ToolsKit.toJsonString(user1));
+//        userDao.findByQuery(Query )
 
         // BeetlSQL
 //        ConnectionSource source = ConnectionSourceHelper.getSimple(driver, url, "", userName, password);

@@ -1,12 +1,15 @@
 package com.zat.coupon.entity;
 
 
+
+import com.springbootside.duang.common.entity.IdEntity;
+
 import javax.validation.constraints.*;
 
 /**
  * Created by laotang on 2020/5/23.
  */
-public class User implements java.io.Serializable {
+public class User extends IdEntity {
 
     @NotEmpty(message = "用户名不能为空")
     private String name;
