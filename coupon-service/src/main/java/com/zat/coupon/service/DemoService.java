@@ -1,8 +1,8 @@
 package com.zat.coupon.service;
 
-import com.springbootside.duang.common.ToolsKit;
-import com.springbootside.duang.db.dao.Dao;
+import com.springbootside.duang.common.utils.ToolsKit;
 import com.springbootside.duang.exception.nums.BaseExceptionEnum;
+import com.zat.coupon.dao.UserDao;
 import com.zat.coupon.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,17 +17,19 @@ public class DemoService {
         return System.currentTimeMillis() + "_" + value;
     }
 
-//    @Autowired
-//    private UserDao userDao;
     @Autowired
-    private Dao<User> userDao;
+    private UserDao userDao;
+//    @Autowired
+//    private Dao<User> userDao;
 
     public User save(User user) {
 //        user.setName(null);
 //        java.util.Objects.requireNonNull(user.getName());
         BaseExceptionEnum.PARAM_NULL.assertNotNull(user.getName());
-        userDao.save(user);
-        User user1 = userDao.findById("13");
+//        userDao.save(user);
+//        User user1 = userDao.findById("13");
+        System.out.println(userDao.getEntityClass());
+        User user1 = userDao.unique(13);
         System.out.println(ToolsKit.toJsonString(user1));
 //        userDao.findByQuery(Query )
 
