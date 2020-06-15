@@ -2,7 +2,7 @@ package com.zat.coupon.controller;
 
 import com.springbootside.duang.common.base.BaseController;
 import com.zat.coupon.entity.User;
-import com.zat.coupon.service.IDemoService;
+import com.zat.coupon.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 public class DemoController extends BaseController<User> {
 
     @Autowired
-    private IDemoService IDemoService;
+    private DemoService demoService;
 
 //    @RequestMapping("/index")
 //    public String index(HttpServletRequest request) {
@@ -47,7 +47,7 @@ public class DemoController extends BaseController<User> {
         System.out.println("##########################@@@@@@@"+ request.hashCode()+"              "+response.hashCode());
 //        user.setName(null);
 //        java.util.Objects.requireNonNull(user.getName());
-//        User user1 =  demoService.save(user);
+        User user1 =  demoService.save(user);
 //        return user1.getName();
         return "success";
     }

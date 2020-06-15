@@ -2,13 +2,14 @@ package com.zat.coupon.service;
 
 
 import com.zat.coupon.entity.User;
+//import org.beetl.sql.core.mapper.BaseMapper;
 
 /**
  * Created by laotang on 2020/5/17.
  */
-public interface IDemoService {
+public interface DemoService {
 
-    void aa(User user);
+    User save(User user);
 
 //    public String index(String value) {
 //        return System.currentTimeMillis() + "_" + value;

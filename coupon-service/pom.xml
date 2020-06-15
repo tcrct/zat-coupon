@@ -20,6 +20,7 @@
         <java.version>1.8</java.version>
         <skipTests>true</skipTests>
         <coupon.entity.version>1.0-SNAPSHOT</coupon.entity.version>
+        <coupon.dao.version>1.0-SNAPSHOT</coupon.dao.version>
         <coupon.dto.version>1.0-SNAPSHOT</coupon.dto.version>
     </properties>
 
@@ -38,24 +39,20 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.zat.coupon.entity</groupId>
-            <artifactId>coupon-entity</artifactId>
-            <version>${coupon.entity.version}</version>
+            <groupId>com.zat.coupon.dao</groupId>
+            <artifactId>coupon-dao</artifactId>
+            <version>${coupon.dao.version}</version>
         </dependency>
         <dependency>
             <groupId>com.zat.coupon.dto</groupId>
             <artifactId>coupon-dto</artifactId>
             <version>${coupon.dto.version}</version>
         </dependency>
+        <!-- springboot-side -->
         <dependency>
             <groupId>com.springbootside.duang.exception</groupId>
             <artifactId>duang-exception</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.zat.coupon</groupId>
-            <artifactId>coupon-dao</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.springbootside.duang.db</groupId>

@@ -2,7 +2,7 @@ package com.zat.coupon.entity;
 
 
 
-import com.springbootside.duang.common.entity.IdEntity;
+import com.springbootside.duang.db.model.IdEntity;
 
 import javax.validation.constraints.*;
 
