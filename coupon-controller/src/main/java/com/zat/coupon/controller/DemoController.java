@@ -47,7 +47,7 @@ public class DemoController extends BaseController<User> {
         System.out.println("##########################@@@@@@@"+ request.hashCode()+"              "+response.hashCode());
 //        user.setName(null);
 //        java.util.Objects.requireNonNull(user.getName());
-        User user1 =  demoService.save(user);
+//        User user1 =  demoService.save(user);
 //        return user1.getName();
         return "success";
     }

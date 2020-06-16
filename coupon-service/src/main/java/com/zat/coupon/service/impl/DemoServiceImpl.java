@@ -17,13 +17,13 @@ public class DemoServiceImpl  extends CurdService<User> implements DemoService {
     private SQLManager manager;
 
 
-    @Override
-    public User save(User user) {
-        userDao.unique(13);
-//        userDao.createQuery()
-        manager.unique(User.class, 13);
-        return user;
-    }
+//    @Override
+//    public User save(User user) {
+//        userDao.unique(13);
+////        userDao.createQuery()
+//        manager.unique(User.class, 13);
+//        return user;
+//    }
 
 
 }

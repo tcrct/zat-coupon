@@ -2,6 +2,7 @@ package com.zat.coupon.entity;
 
 
 
+import com.springbootside.duang.db.model.BaseEntity;
 import com.springbootside.duang.db.model.IdEntity;
 
 import javax.validation.constraints.*;
@@ -9,7 +10,7 @@ import javax.validation.constraints.*;
 /**
  * Created by laotang on 2020/5/23.
  */
-public class User extends IdEntity {
+public class User extends BaseEntity {
 
     @NotEmpty(message = "用户名不能为空")
     private String name;

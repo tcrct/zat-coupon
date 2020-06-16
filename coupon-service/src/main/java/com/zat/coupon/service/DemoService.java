@@ -9,7 +9,7 @@ import com.zat.coupon.entity.User;
  */
 public interface DemoService {
 
-    User save(User user);
+//    User save(User user);
 
 //    public String index(String value) {
 //        return System.currentTimeMillis() + "_" + value;
