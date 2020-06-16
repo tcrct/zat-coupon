@@ -16,6 +16,7 @@
         <module>coupon-web</module>
         <module>coupon-handler</module>
         <module>coupon-dao</module>
+        <module>coupon-cache</module>
     </modules>
 
     <parent>
