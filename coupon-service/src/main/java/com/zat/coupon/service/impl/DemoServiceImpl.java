@@ -17,6 +17,11 @@ public class DemoServiceImpl  extends CurdService<User> implements DemoService {
     private SQLManager manager;
 
 
+    @Override
+    public User findById2(Integer id) {
+        return userDao.single(id);
+    }
+
 //    @Override
 //    public User save(User user) {
 //        userDao.unique(13);

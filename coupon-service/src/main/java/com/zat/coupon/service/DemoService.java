@@ -1,7 +1,9 @@
 package com.zat.coupon.service;
 
 
+import com.zat.coupon.dao.UserDao;
 import com.zat.coupon.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
 //import org.beetl.sql.core.mapper.BaseMapper;
 
 /**
@@ -11,9 +13,7 @@ public interface DemoService {
 
 //    User save(User user);
 
-//    public String index(String value) {
-//        return System.currentTimeMillis() + "_" + value;
-//    }
+    User findById2(Integer id);
 
 //    @Autowired
 //    private UserDao userDao;

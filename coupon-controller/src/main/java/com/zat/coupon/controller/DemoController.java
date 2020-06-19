@@ -52,4 +52,15 @@ public class DemoController extends BaseController<User> {
         return "success";
     }
 
+    @RequestMapping(value = "/findById2", method= RequestMethod.GET)
+    @ResponseBody
+    public User findById2(HttpServletRequest request, HttpServletResponse response) {
+        System.out.println("##########################@@@@@@@"+ request.hashCode()+"              "+response.hashCode());
+//        user.setName(null);
+//        java.util.Objects.requireNonNull(user.getName());
+        User user =  demoService.findById2(getIntValue("id"));
+//        return user1.getName();
+        return user;
+    }
+
 }

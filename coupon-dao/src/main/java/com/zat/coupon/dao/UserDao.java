@@ -12,4 +12,5 @@ import com.zat.coupon.entity.User;
  */
 public interface UserDao extends BaseDao<User> {
 
+
 }
